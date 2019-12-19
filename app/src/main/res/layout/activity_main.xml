@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:ignore="HardcodedText">
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/label_more_10mb"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/label_less_10mb"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:gravity="center"
+        android:lines="1"
+        android:maxLines="1"
+        android:text="less 10Mb"
+        app:layout_constraintBaseline_toBaselineOf="@+id/label_more_10mb"
+        app:layout_constraintEnd_toStartOf="@+id/label_more_10mb"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_less_10mb_set"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="set"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn_more_10mb_set"
+        app:layout_constraintEnd_toStartOf="@+id/btn_more_10mb_set"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_less_10mb_download"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="download"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn_more_10mb_download"
+        app:layout_constraintEnd_toStartOf="@+id/btn_more_10mb_download"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_less_10mb_state"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="state"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn_more_10mb_state"
+        app:layout_constraintEnd_toStartOf="@+id/btn_more_10mb_state"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_less_10mb_remove"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="remove"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn_more_10mb_remove"
+        app:layout_constraintEnd_toStartOf="@+id/btn_more_10mb_remove"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <TextView
+        android:id="@+id/label_more_10mb"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:lines="1"
+        android:maxLines="1"
+        android:text="more 10Mb"
+        app:layout_constraintBottom_toTopOf="@+id/btn_more_10mb_set"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/label_less_10mb"
+        app:layout_constraintTop_toBottomOf="@+id/image_view" />
+
+    <Button
+        android:id="@+id/btn_more_10mb_set"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="7dp"
+        android:layout_marginRight="7dp"
+        android:text="set"
+        app:layout_constraintBottom_toTopOf="@+id/btn_more_10mb_download"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_less_10mb_set"
+        app:layout_constraintTop_toBottomOf="@+id/label_more_10mb" />
+
+    <Button
+        android:id="@+id/btn_more_10mb_download"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="7dp"
+        android:layout_marginRight="7dp"
+        android:text="download"
+        app:layout_constraintBottom_toTopOf="@+id/btn_more_10mb_state"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_less_10mb_download"
+        app:layout_constraintTop_toBottomOf="@+id/btn_more_10mb_set" />
+
+    <Button
+        android:id="@+id/btn_more_10mb_state"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="7dp"
+        android:layout_marginRight="7dp"
+        android:text="state"
+        app:layout_constraintBottom_toTopOf="@+id/btn_more_10mb_remove"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_less_10mb_state"
+        app:layout_constraintTop_toBottomOf="@+id/btn_more_10mb_download" />
+
+    <Button
+        android:id="@+id/btn_more_10mb_remove"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginBottom="8dp"
+        android:text="remove"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_less_10mb_remove"
+        app:layout_constraintTop_toBottomOf="@+id/btn_more_10mb_state" />
+
+    <ScrollView
+        android:id="@+id/text_view_logs_wrapper"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:elevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/text_view_logs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#8000"
+            android:padding="16dp"
+            android:textColor="#fff"
+            tools:text="Logs" />
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
